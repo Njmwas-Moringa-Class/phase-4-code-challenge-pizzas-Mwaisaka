@@ -18,11 +18,6 @@ migrate = Migrate(app, db)
 
 db.init_app(app)
 
-
-@app.route('/')
-def index():
-    return '<h1>Code challenge</h1>'
-
 # GET /restaurants
 @app.route('/restaurants', methods=['GET'])
 def get_restaurants():
